@@ -1,4 +1,4 @@
-#it will create an virtual network.
+/*#it will create an virtual network.
 resource "azurerm_virtual_network" "myvnet" {
   name = "myvnet-1"
   location            = azurerm_resource_group.demoresourcegrp.location
@@ -37,4 +37,4 @@ resource "azurerm_network_interface" "myvmnic" {
     private_ip_address_allocation = "Dynamic"
     public_ip_address_id = azurerm_public_ip.mypublicip.id
   }
-}
+}*/

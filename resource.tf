@@ -1,7 +1,9 @@
 resource "azurerm_resource_group" "demoresourcegrp"{
     location = var.resource_group_location
-    name = var.resource_group_name
+    name = "${local.resource_name_prefix}-${var.resource_group_name}-${random_string.myrandom.id}"
+    tags = local.common_tags
 }
+/*
 #random string
 resource "random_string" "myrandom" {
   length = 16
@@ -21,4 +23,4 @@ resource "azurerm_storage_account" "mysa" {
   tags = {
     environment = "staging"
   }
-}
+}*/
