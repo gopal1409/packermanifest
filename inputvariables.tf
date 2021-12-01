@@ -19,7 +19,7 @@ variable "resource_group_name" {
   default = "rg-default"
 }
 
-variable "resoource_group_location" {
+variable "resource_group_location" {
   type = string
   default = "eastus2"
 }
