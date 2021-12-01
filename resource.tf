@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "demoresourcegrp"{
     location = "eastus"
-    name = "demoresource-eastus"
+    name = var.resource_group_name
 }
 #random string
 resource "random_string" "myrandom" {
